@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::DateTruncate;
 {
-  $Form::Toolkit::FieldRole::DateTruncate::VERSION = '0.001';
+  $Form::Toolkit::FieldRole::DateTruncate::VERSION = '0.002';
 }
 use Moose::Role;
 use DateTime;

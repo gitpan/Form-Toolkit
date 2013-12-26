@@ -1,6 +1,6 @@
 package Form::Toolkit::Clerk;
 {
-  $Form::Toolkit::Clerk::VERSION = '0.001';
+  $Form::Toolkit::Clerk::VERSION = '0.002';
 }
 use Moose;
 use DateTime::Format::ISO8601;

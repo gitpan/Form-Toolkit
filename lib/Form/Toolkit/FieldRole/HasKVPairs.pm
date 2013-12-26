@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::HasKVPairs;
 {
-  $Form::Toolkit::FieldRole::HasKVPairs::VERSION = '0.001';
+  $Form::Toolkit::FieldRole::HasKVPairs::VERSION = '0.002';
 }
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
