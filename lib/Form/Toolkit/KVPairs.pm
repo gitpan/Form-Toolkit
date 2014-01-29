@@ -1,6 +1,6 @@
 package Form::Toolkit::KVPairs;
 {
-  $Form::Toolkit::KVPairs::VERSION = '0.002';
+  $Form::Toolkit::KVPairs::VERSION = '0.003';
 }
 use Moose;
 

@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::Email;
 {
-  $Form::Toolkit::FieldRole::Email::VERSION = '0.002';
+  $Form::Toolkit::FieldRole::Email::VERSION = '0.003';
 }
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole

@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::Trimmed;
 {
-  $Form::Toolkit::FieldRole::Trimmed::VERSION = '0.002';
+  $Form::Toolkit::FieldRole::Trimmed::VERSION = '0.003';
 }
 use Moose::Role;
 

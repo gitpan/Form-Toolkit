@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Form::Toolkit",
   "PREREQ_PM" => {
-    "Class::MOP" => 0,
+    "Class::Load" => 0,
     "DateTime" => 0,
     "DateTime::Format::ISO8601" => 0,
     "Mail::RFC822::Address" => 0,
@@ -42,7 +42,7 @@ my %WriteMakefileArgs = (
     "Test::More" => 0,
     "base" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -50,7 +50,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Class::MOP" => 0,
+  "Class::Load" => 0,
   "DBD::SQLite" => 0,
   "DBI" => 0,
   "DBIx::Class::Schema::Loader" => 0,

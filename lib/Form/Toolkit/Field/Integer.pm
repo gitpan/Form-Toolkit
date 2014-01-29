@@ -1,6 +1,6 @@
 package Form::Toolkit::Field::Integer;
 {
-  $Form::Toolkit::Field::Integer::VERSION = '0.002';
+  $Form::Toolkit::Field::Integer::VERSION = '0.003';
 }
 use Moose;
 
