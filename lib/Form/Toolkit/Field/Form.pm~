@@ -1,7 +1,4 @@
 package Form::Toolkit::Field::Set;
-{
-  $Form::Toolkit::Field::Set::VERSION = '0.004';
-}
 use Moose;
 
 extends qw/Form::Toolkit::Field/;
@@ -131,5 +128,4 @@ sub clear{
    $self->_values_idx({});
 };
 
-__PACKAGE__->meta->make_immutable();
-
+1;

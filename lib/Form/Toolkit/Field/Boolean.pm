@@ -1,6 +1,6 @@
 package Form::Toolkit::Field::Boolean;
 {
-  $Form::Toolkit::Field::Boolean::VERSION = '0.003';
+  $Form::Toolkit::Field::Boolean::VERSION = '0.004';
 }
 use Moose;
 

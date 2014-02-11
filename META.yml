@@ -7,6 +7,7 @@ build_requires:
   DBI: 0
   DBIx::Class::Schema::Loader: 0
   Data::Dumper: 0
+  MyFormBase: 0
   Test::Exception: 0
   Test::More: 0
   base: 0
@@ -23,6 +24,8 @@ requires:
   Class::Load: 0
   DateTime: 0
   DateTime::Format::ISO8601: 0
+  JSON: 0
+  MIME::Base64: 0
   Mail::RFC822::Address: 0
   Module::Pluggable::Object: 0
   Moose: 0
@@ -37,4 +40,4 @@ resources:
   bugtracker: https://github.com/jeteve/Form-Toolkit/issues
   homepage: https://github.com/jeteve/Form-Toolkit
   repository: https://github.com/jeteve/Form-Toolkit.git
-version: 0.003
+version: 0.004

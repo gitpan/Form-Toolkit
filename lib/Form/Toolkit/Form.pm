@@ -1,6 +1,6 @@
 package Form::Toolkit::Form;
 {
-  $Form::Toolkit::Form::VERSION = '0.003';
+  $Form::Toolkit::Form::VERSION = '0.004';
 }
 require 5.010_000;
 use Moose -traits => 'Form::Toolkit::Meta::Class::Trait::HasID';
@@ -11,7 +11,10 @@ use Form::Toolkit::Clerk::Hash;
 use Form::Toolkit::Field;
 use Form::Toolkit::Field::String;
 
+use JSON;
+use MIME::Base64;
 use Scalar::Util;
+
 
 with qw(MooseX::Clone);
 
@@ -22,6 +25,8 @@ Form::Toolkit::Form - A Moose base class for Form implementation
 =cut
 
 __PACKAGE__->meta->id_prefix('form_');
+
+has 'jsoner' => ( isa => 'JSON' , is => 'ro', required => 1, lazy_build => 1);
 
 has 'fields' => ( isa => 'ArrayRef[Form::Toolkit::Field]', is => 'ro' , required => 1 , default => sub{ [] } ,
                 traits => ['Clone']);
@@ -43,6 +48,11 @@ Hooks in the Moose BUILD to call build_fields
 sub BUILD{
   my ($self) = @_;
   $self->build_fields();
+}
+
+sub _build_jsoner{
+  my ($self) = @_;
+  return JSON->new->ascii(1)->pretty(0);
 }
 
 
@@ -299,6 +309,48 @@ sub values_hash{
   }
   return $ret;
 }
+
+=head2 litteral
+
+Returns a litteral representation of this form (as a Base64 encoded JSON byte string).
+
+Usage:
+
+   print $this->litteral();
+
+=cut
+
+sub litteral{
+  my ($self) = @_;
+  return MIME::Base64::encode_base64url(ref($self) .'|'. $self->jsoner()->encode($self->values_hash()));
+}
+
+=head2 from_litteral
+
+Class or instance method. Builds a new instance of form from the given litteral (See litteral).
+
+If you are using Forms as other Form's field values, and if all your forms require
+extra attribute, you can override that IN YOUR CONTAINER form. It will be called
+as an instance method by the form filling Clerks. See example in test 11.
+
+Usage:
+
+  my $form = $this->from_litteral($litteral);
+
+=cut
+
+sub from_litteral{
+  my ($class , $litteral, $attributes ) = @_;
+  $attributes ||= {};
+  my ($fclass, $json) = split('\|', MIME::Base64::decode_base64url($litteral) , 2 );
+  my $jsoner = JSON->new();
+  my $values_hash = $jsoner->decode($json);
+  Class::Load::load_class($fclass);
+  my $new_instance = $fclass->new(%$attributes);
+  $new_instance->fill_hash($values_hash);
+  return $new_instance;
+}
+
 
 =head2 fill_hash
 

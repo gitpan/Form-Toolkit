@@ -10,6 +10,8 @@ lib/Form/Toolkit/Clerk/Hash.pm
 lib/Form/Toolkit/Field.pm
 lib/Form/Toolkit/Field/Boolean.pm
 lib/Form/Toolkit/Field/Date.pm
+lib/Form/Toolkit/Field/Form.pm
+lib/Form/Toolkit/Field/Form.pm~
 lib/Form/Toolkit/Field/Integer.pm
 lib/Form/Toolkit/Field/Set.pm
 lib/Form/Toolkit/Field/String.pm
@@ -44,6 +46,8 @@ t/07-values-hash.t
 t/08-clone.t
 t/09-dates.t
 t/10-kvpairs.t
+t/11-formfields.t
+t/11-formfields.t~
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
