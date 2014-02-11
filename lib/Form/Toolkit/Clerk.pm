@@ -1,6 +1,6 @@
 package Form::Toolkit::Clerk;
 {
-  $Form::Toolkit::Clerk::VERSION = '0.004';
+  $Form::Toolkit::Clerk::VERSION = '0.005';
 }
 use Moose;
 use DateTime::Format::ISO8601;
@@ -99,7 +99,7 @@ sub _fill_field_Form{
     return;
   }
 
-  $field->value($container_form->from_litteral($str));
+  $field->value($container_form->from_literal($str));
 }
 
 sub _fill_field_String{

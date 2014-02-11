@@ -40,12 +40,11 @@ my %WriteMakefileArgs = (
     "DBI" => 0,
     "DBIx::Class::Schema::Loader" => 0,
     "Data::Dumper" => 0,
-    "MyFormBase" => 0,
     "Test::Exception" => 0,
     "Test::More" => 0,
     "base" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -68,7 +67,6 @@ my %FallbackPrereqs = (
   "Moose::Role" => 0,
   "Moose::Util" => 0,
   "MooseX::Clone" => 0,
-  "MyFormBase" => 0,
   "Scalar::Util" => 0,
   "Test::Exception" => 0,
   "Test::More" => 0,

@@ -1,6 +1,6 @@
 package Form::Toolkit::Meta::Class::Trait::HasShortClass;
 {
-  $Form::Toolkit::Meta::Class::Trait::HasShortClass::VERSION = '0.004';
+  $Form::Toolkit::Meta::Class::Trait::HasShortClass::VERSION = '0.005';
 }
 use Moose::Role;
 

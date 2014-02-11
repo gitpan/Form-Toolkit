@@ -1,6 +1,6 @@
 package Form::Toolkit::Field::Set;
 {
-  $Form::Toolkit::Field::Set::VERSION = '0.004';
+  $Form::Toolkit::Field::Set::VERSION = '0.005';
 }
 use Moose;
 

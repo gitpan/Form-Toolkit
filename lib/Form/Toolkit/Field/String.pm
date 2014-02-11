@@ -1,6 +1,6 @@
 package Form::Toolkit::Field::String;
 {
-  $Form::Toolkit::Field::String::VERSION = '0.004';
+  $Form::Toolkit::Field::String::VERSION = '0.005';
 }
 use Moose;
 

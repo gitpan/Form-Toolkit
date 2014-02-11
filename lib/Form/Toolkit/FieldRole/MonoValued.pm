@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::MonoValued;
 {
-  $Form::Toolkit::FieldRole::MonoValued::VERSION = '0.004';
+  $Form::Toolkit::FieldRole::MonoValued::VERSION = '0.005';
 }
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;

@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole;
 {
-  $Form::Toolkit::FieldRole::VERSION = '0.004';
+  $Form::Toolkit::FieldRole::VERSION = '0.005';
 }
 use Moose::Role;
 requires qw/validate add_error/;

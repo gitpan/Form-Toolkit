@@ -1,6 +1,6 @@
 package Form::Toolkit::Test;
 {
-  $Form::Toolkit::Test::VERSION = '0.004';
+  $Form::Toolkit::Test::VERSION = '0.005';
 }
 use Moose;
 use Class::Load;

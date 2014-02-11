@@ -1,6 +1,6 @@
 package Form::Toolkit::FieldRole::MinLength;
 {
-  $Form::Toolkit::FieldRole::MinLength::VERSION = '0.004';
+  $Form::Toolkit::FieldRole::MinLength::VERSION = '0.005';
 }
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;

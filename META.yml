@@ -7,7 +7,6 @@ build_requires:
   DBI: 0
   DBIx::Class::Schema::Loader: 0
   Data::Dumper: 0
-  MyFormBase: 0
   Test::Exception: 0
   Test::More: 0
   base: 0
@@ -40,4 +39,4 @@ resources:
   bugtracker: https://github.com/jeteve/Form-Toolkit/issues
   homepage: https://github.com/jeteve/Form-Toolkit
   repository: https://github.com/jeteve/Form-Toolkit.git
-version: 0.004
+version: 0.005

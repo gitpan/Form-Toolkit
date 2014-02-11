@@ -3,7 +3,7 @@ use warnings;
 require 5.010_000;
 package Form::Toolkit;
 {
-  $Form::Toolkit::VERSION = '0.004';
+  $Form::Toolkit::VERSION = '0.005';
 }
 
 1;

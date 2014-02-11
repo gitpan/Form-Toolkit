@@ -1,6 +1,6 @@
 package Form::Toolkit::Clerk::Hash;
 {
-  $Form::Toolkit::Clerk::Hash::VERSION = '0.004';
+  $Form::Toolkit::Clerk::Hash::VERSION = '0.005';
 }
 use Moose;
 
