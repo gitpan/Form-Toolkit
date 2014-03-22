@@ -2,7 +2,7 @@ use strict;
 use warnings;
 require 5.010_000;
 package Form::Toolkit;
-$Form::Toolkit::VERSION = '0.006';
+$Form::Toolkit::VERSION = '0.007';
 1;
 
 __END__

@@ -1,5 +1,5 @@
 package Form::Toolkit::Test;
-$Form::Toolkit::Test::VERSION = '0.006';
+$Form::Toolkit::Test::VERSION = '0.007';
 use Moose;
 use Class::Load;
 use Module::Pluggable::Object;

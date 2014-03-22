@@ -1,5 +1,5 @@
 package Form::Toolkit::FieldRole::MinMax;
-$Form::Toolkit::FieldRole::MinMax::VERSION = '0.006';
+$Form::Toolkit::FieldRole::MinMax::VERSION = '0.007';
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
 

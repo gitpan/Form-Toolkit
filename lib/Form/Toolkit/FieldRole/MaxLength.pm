@@ -1,5 +1,5 @@
 package Form::Toolkit::FieldRole::MaxLength;
-$Form::Toolkit::FieldRole::MaxLength::VERSION = '0.006';
+$Form::Toolkit::FieldRole::MaxLength::VERSION = '0.007';
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
 

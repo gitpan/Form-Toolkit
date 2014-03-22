@@ -1,5 +1,5 @@
 package Form::Toolkit::Field::Integer;
-$Form::Toolkit::Field::Integer::VERSION = '0.006';
+$Form::Toolkit::Field::Integer::VERSION = '0.007';
 use Moose;
 
 extends qw/Form::Toolkit::Field/;

@@ -1,5 +1,5 @@
 package Form::Toolkit::Field::Form;
-$Form::Toolkit::Field::Form::VERSION = '0.006';
+$Form::Toolkit::Field::Form::VERSION = '0.007';
 use Moose;
 
 extends qw/Form::Toolkit::Field/;
