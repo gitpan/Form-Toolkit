@@ -1,7 +1,5 @@
 package Form::Toolkit::Field::Form;
-{
-  $Form::Toolkit::Field::Form::VERSION = '0.005';
-}
+$Form::Toolkit::Field::Form::VERSION = '0.006';
 use Moose;
 
 extends qw/Form::Toolkit::Field/;
@@ -29,7 +27,10 @@ See superclass.
 
 sub value_struct{
   my ($self) = @_;
-  return $self->value()->literal();
+  if( $self->value() ){
+    return $self->value()->literal();
+  }
+  return undef;
 }
 
 __PACKAGE__->meta->make_immutable();

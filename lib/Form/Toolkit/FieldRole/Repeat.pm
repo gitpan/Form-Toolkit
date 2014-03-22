@@ -1,7 +1,5 @@
 package Form::Toolkit::FieldRole::Repeat;
-{
-  $Form::Toolkit::FieldRole::Repeat::VERSION = '0.005';
-}
+$Form::Toolkit::FieldRole::Repeat::VERSION = '0.006';
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
 

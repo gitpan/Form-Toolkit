@@ -1,7 +1,5 @@
 package Form::Toolkit::Clerk::Hash;
-{
-  $Form::Toolkit::Clerk::Hash::VERSION = '0.005';
-}
+$Form::Toolkit::Clerk::Hash::VERSION = '0.006';
 use Moose;
 
 extends qw/Form::Toolkit::Clerk/;

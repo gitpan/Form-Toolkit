@@ -1,7 +1,5 @@
 package Form::Toolkit::Meta::Class::Trait::HasID;
-{
-  $Form::Toolkit::Meta::Class::Trait::HasID::VERSION = '0.005';
-}
+$Form::Toolkit::Meta::Class::Trait::HasID::VERSION = '0.006';
 use Moose::Role;
 
 =head2 NAME

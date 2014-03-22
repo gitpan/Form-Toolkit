@@ -1,7 +1,5 @@
 package Form::Toolkit::FieldRole::RegExpMatch;
-{
-  $Form::Toolkit::FieldRole::RegExpMatch::VERSION = '0.005';
-}
+$Form::Toolkit::FieldRole::RegExpMatch::VERSION = '0.006';
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
 
