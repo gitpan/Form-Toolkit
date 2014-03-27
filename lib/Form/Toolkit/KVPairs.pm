@@ -1,5 +1,7 @@
 package Form::Toolkit::KVPairs;
-$Form::Toolkit::KVPairs::VERSION = '0.007';
+{
+  $Form::Toolkit::KVPairs::VERSION = '0.008';
+}
 use Moose;
 
 =head1 NAME

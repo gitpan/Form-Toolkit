@@ -1,5 +1,7 @@
 package Form::Toolkit::FieldRole::Mandatory;
-$Form::Toolkit::FieldRole::Mandatory::VERSION = '0.007';
+{
+  $Form::Toolkit::FieldRole::Mandatory::VERSION = '0.008';
+}
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole/;
 

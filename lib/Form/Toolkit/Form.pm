@@ -1,5 +1,7 @@
 package Form::Toolkit::Form;
-$Form::Toolkit::Form::VERSION = '0.007';
+{
+  $Form::Toolkit::Form::VERSION = '0.008';
+}
 require 5.010_000;
 use Moose -traits => 'Form::Toolkit::Meta::Class::Trait::HasID';
 use Class::Load;

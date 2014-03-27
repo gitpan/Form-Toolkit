@@ -1,5 +1,7 @@
 package Form::Toolkit::Field;
-$Form::Toolkit::Field::VERSION = '0.007';
+{
+  $Form::Toolkit::Field::VERSION = '0.008';
+}
 use Class::Load;
 use Moose -traits => 'Form::Toolkit::Meta::Class::Trait::HasShortClass';
 use Moose::Util qw/apply_all_roles/;

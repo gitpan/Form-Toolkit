@@ -1,5 +1,7 @@
 package Form::Toolkit::Field::Date;
-$Form::Toolkit::Field::Date::VERSION = '0.007';
+{
+  $Form::Toolkit::Field::Date::VERSION = '0.008';
+}
 use Moose;
 use DateTime;
 

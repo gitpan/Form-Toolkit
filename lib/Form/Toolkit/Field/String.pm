@@ -1,5 +1,7 @@
 package Form::Toolkit::Field::String;
-$Form::Toolkit::Field::String::VERSION = '0.007';
+{
+  $Form::Toolkit::Field::String::VERSION = '0.008';
+}
 use Moose;
 
 extends qw/Form::Toolkit::Field/;

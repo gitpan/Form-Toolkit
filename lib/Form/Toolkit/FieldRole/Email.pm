@@ -1,5 +1,7 @@
 package Form::Toolkit::FieldRole::Email;
-$Form::Toolkit::FieldRole::Email::VERSION = '0.007';
+{
+  $Form::Toolkit::FieldRole::Email::VERSION = '0.008';
+}
 use Moose::Role;
 with qw/Form::Toolkit::FieldRole
         Form::Toolkit::FieldRole::Trimmed

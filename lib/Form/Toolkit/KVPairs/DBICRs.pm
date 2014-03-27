@@ -1,5 +1,7 @@
 package Form::Toolkit::KVPairs::DBICRs;
-$Form::Toolkit::KVPairs::DBICRs::VERSION = '0.007';
+{
+  $Form::Toolkit::KVPairs::DBICRs::VERSION = '0.008';
+}
 use Moose;
 extends qw/Form::Toolkit::KVPairs/;
 

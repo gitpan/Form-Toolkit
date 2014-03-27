@@ -1,5 +1,7 @@
 package Form::Toolkit::Field::Boolean;
-$Form::Toolkit::Field::Boolean::VERSION = '0.007';
+{
+  $Form::Toolkit::Field::Boolean::VERSION = '0.008';
+}
 use Moose;
 
 extends qw/Form::Toolkit::Field/;

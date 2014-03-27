@@ -1,5 +1,7 @@
 package Form::Toolkit::Clerk;
-$Form::Toolkit::Clerk::VERSION = '0.007';
+{
+  $Form::Toolkit::Clerk::VERSION = '0.008';
+}
 use Moose;
 use DateTime::Format::ISO8601;
 use JSON;
